@@ -1,0 +1,24 @@
+numero1 = 0 
+numero2 = 0 
+resultado = 0
+operacao = ''
+
+numero1 = int(input("digite o numero: "))
+operacao = input("digite a operação (+, -, *, /): ")
+numero2 = int(input("digite o segundo numero: "))
+
+if operacao == "+":
+    resultado = numero1 + numero2
+elif operacao == "-":
+    resultado = numero1 - numero2
+elif operacao == "/":
+    if numero2 != 0:
+        resultado = numero1 / numero2
+    else:
+        resultado = "Erro: Divisão por zero"
+elif operacao == "*":
+    resultado = numero1 * numero2
+else: 
+    resultado = 'operação inválida'
+
+print(f"{numero1}{operacao}{numero2} = {resultado}")
